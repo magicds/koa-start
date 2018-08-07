@@ -1,0 +1,14 @@
+{
+  "name": "koa-start",
+  "version": "1.0.0",
+  "description": "learn koa ",
+  "main": "index.js",
+  "repository": "git@github.com:cdswyda/koa-start.git",
+  "author": "cdswyda <cdswyda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-session": "^5.8.2",
+    "mongoose": "^5.2.7"
+  }
+}
