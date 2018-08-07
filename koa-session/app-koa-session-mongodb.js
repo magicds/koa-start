@@ -6,6 +6,7 @@ const app = new Koa()
 app.keys = ['this is koa session test']
 
 // mongodbb base
+// 过期时间还未处理
 app.use(session({
     key: 'koa-session-test',
     maxAge: 86400000,
