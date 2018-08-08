@@ -3,13 +3,12 @@ const session = require('koa-session')
 const DbStore = require('./mongodb-store')
 const app = new Koa()
 
-app.keys = ['this is koa session test']
+app.keys = ['this is koa session test1']
 
 // mongodbb base
-// 过期时间还未处理
 app.use(session({
-    key: 'koa-session-test',
-    maxAge: 86400000,
+    key: 'koa-session-test1',
+    maxAge: 1000 * 60,
     overwrite: true,
     /** (boolean) can overwrite or not (default true) */
     httpOnly: true,
